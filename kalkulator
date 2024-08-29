@@ -1,0 +1,37 @@
+def calculator(num1, operator, num2):
+  """
+  This function takes two numbers and an operator as input and returns the result of the calculation.
+
+  Args:
+    num1: The first number.
+    operator: The operator to be used for the calculation.
+    num2: The second number.
+
+  Returns:
+    The result of the calculation.
+  """
+
+  if operator == "+":
+    return num1 + num2
+  elif operator == "-":
+    return num1 - num2
+  elif operator == "*":
+    return num1 * num2
+  elif operator == "/":
+    if num2 == 0:
+      return "Cannot divide by zero."
+    else:
+      return num1 / num2
+  else:
+    return "Invalid operator."
+
+
+# Example usage
+result = calculator(5, "+", 3)
+print(result)  # Output: 8
+
+result = calculator(10, "/", 2)
+print(result)  # Output: 5
+
+result = calculator(5, "*", 0)
+print(result)  # Output:
